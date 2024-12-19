@@ -1,0 +1,82 @@
+body {
+    background-color: teal;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+// .birthday-container {
+//     background: #fef6e4;
+//     width: 100%;
+//     height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
+.birthday-list {
+    background-color: #fef6e4;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+
+            .avatar {
+                border-radius: 50%;
+                margin-right: 10px;
+                transition: transform 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+
+            h4 {
+                margin: 0;
+                font-size: 1rem;
+                font-weight: 600;
+            }
+
+            p {
+                margin: 0;
+                font-size: 0.875rem;
+                color: #555;
+            }
+        }
+    }
+
+    button {
+        background-color: #ff6b6b;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 15px;
+        cursor: pointer;
+        font-size: 1rem;
+        margin: 15px 10px;
+
+        &:hover {
+            background-color: #2b4b08;
+        }
+
+        &:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    }
+}
